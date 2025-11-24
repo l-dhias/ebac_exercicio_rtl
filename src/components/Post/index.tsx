@@ -5,7 +5,7 @@ import { ReactNode } from 'react';
 
 type Props = {
     children: ReactNode;
-    imageUrl: string;
+    imageUrl: string; 
 }
 
 const Post = ({ children, imageUrl }: Props) => (
@@ -13,7 +13,7 @@ const Post = ({ children, imageUrl }: Props) => (
         <img className={styles['post-image']} src={imageUrl} />
         <p className={styles['post-text']}> {children} </p>
         <PostComments />
-    </div>
+    </div> 
 );
 
 export default Post;
